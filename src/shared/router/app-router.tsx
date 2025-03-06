@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { DashboardPage } from "../../modules/dashboard";
 import { HomePage } from "../../modules/home";
 import { SignInPage } from "../../modules/security/signin";
 import { useAuthStore } from "../stores/auth.store";
@@ -24,6 +25,7 @@ export const AppRouter = () => {
       {/* Rutas protegidas que requieren autenticación */}
       <Route element={<ProtectedRoute />}>
         <Route path="/home" element={<HomePage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
         {/* Aquí se pueden agregar más rutas protegidas */}
       </Route>
 
