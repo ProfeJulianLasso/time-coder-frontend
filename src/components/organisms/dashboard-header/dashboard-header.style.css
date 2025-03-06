@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .dashboard-header {
-  @apply bg-white shadow-sm py-4 px-6 mb-8;
+  @apply bg-white shadow-sm py-4 px-6;
 }
 
 .dashboard-header-content {
