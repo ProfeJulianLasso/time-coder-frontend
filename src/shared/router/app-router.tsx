@@ -1,12 +1,11 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import { DashboardPage } from "../../modules/dashboard";
-import { HomePage } from "../../modules/home";
 import { SignInPage } from "../../modules/security/signin";
-import { useAuthStore } from "../stores/auth.store";
-import { ProtectedRoute } from "./protected-route";
+import { useAuthStore } from "../stores";
+import ProtectedRoute from "./protected-route";
 
-export const AppRouter = () => {
+const AppRouter = () => {
   const { checkAuth } = useAuthStore();
 
   // Verificar si hay un usuario autenticado al cargar
@@ -24,7 +23,6 @@ export const AppRouter = () => {
 
       {/* Rutas protegidas que requieren autenticación */}
       <Route element={<ProtectedRoute />}>
-        <Route path="/home" element={<HomePage />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         {/* Aquí se pueden agregar más rutas protegidas */}
       </Route>
@@ -34,3 +32,5 @@ export const AppRouter = () => {
     </Routes>
   );
 };
+
+export default AppRouter;

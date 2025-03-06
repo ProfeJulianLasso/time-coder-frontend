@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.dashboard-layout {
+  @apply min-h-screen flex flex-col bg-gray-100;
+}
+
+.dashboard-main-content {
+  @apply flex-1;
+}
+
+.dashboard-footer {
+  @apply py-4 px-6 mt-auto bg-white border-t border-gray-200 text-center text-sm text-gray-600;
+}

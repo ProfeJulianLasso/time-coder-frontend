@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.dashboard-header {
+  @apply bg-white shadow-sm py-4 px-6 mb-8;
+}
+
+.dashboard-header-content {
+  @apply flex justify-between items-center max-w-7xl mx-auto;
+}
+
+.dashboard-user-info {
+  @apply flex items-center gap-4;
+}
+
+.dashboard-user-avatar {
+  @apply w-12 h-12 rounded-full;
+}
+
+.dashboard-user-name {
+  @apply text-xl font-semibold text-gray-800;
+}
+
+.dashboard-user-email {
+  @apply text-sm text-gray-600;
+}
+
+.dashboard-actions {
+  @apply flex items-center gap-4;
+}

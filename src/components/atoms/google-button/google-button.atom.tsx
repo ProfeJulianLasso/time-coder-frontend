@@ -2,7 +2,7 @@ import { GoogleLogin } from "@react-oauth/google";
 import { useAuthStore } from "../../../shared/stores";
 import "./google-button.style.css";
 
-export const GoogleButtonAtom = () => {
+const GoogleButtonAtom = () => {
   const { loginWithGoogle } = useAuthStore();
 
   return (
@@ -31,3 +31,5 @@ export const GoogleButtonAtom = () => {
     </div>
   );
 };
+
+export default GoogleButtonAtom;

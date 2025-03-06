@@ -1,10 +1,10 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuthStore } from "../../../shared/stores";
-import { GoogleButtonAtom } from "../../atoms/google-button";
+import GoogleButtonAtom from "../../atoms/google-button/google-button.atom";
 import "./signin-form.style.css";
 
-export const SignInFormOrganism = () => {
+const SignInFormOrganism = () => {
   const { isAuthenticated, checkAuth } = useAuthStore();
   const navigate = useNavigate();
 
@@ -15,8 +15,8 @@ export const SignInFormOrganism = () => {
   // Redireccionar si ya está autenticado usando react-router
   useEffect(() => {
     if (isAuthenticated) {
-      console.log("Usuario autenticado, redirigiendo a home...");
-      navigate("/home");
+      console.log("Usuario autenticado, redirigiendo al dashboard...");
+      navigate("/dashboard", { replace: true });
     }
   }, [isAuthenticated, navigate]);
 
@@ -43,3 +43,5 @@ export const SignInFormOrganism = () => {
     </div>
   );
 };
+
+export default SignInFormOrganism;

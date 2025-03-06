@@ -1,5 +1,13 @@
+import { useEffect } from "react";
+import { DashboardTemplate } from "../../components/templates/dashboard";
+import "./dashboard.style.css";
+
 const DashboardPage = () => {
-  return <div>DashboardPage</div>;
+  useEffect(() => {
+    document.title = "Dashboard | TimeCoder";
+  }, []);
+
+  return <DashboardTemplate />;
 };
 
 export default DashboardPage;

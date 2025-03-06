@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.dashboard-actions-section {
+  @apply py-6 px-6;
+}
+
+.dashboard-actions-container {
+  @apply max-w-7xl mx-auto bg-white rounded-lg shadow-sm p-6;
+}
+
+.dashboard-actions-title {
+  @apply text-xl font-semibold mb-2 text-gray-800;
+}
+
+.dashboard-actions-description {
+  @apply text-gray-600 mb-6;
+}
+
+.dashboard-actions-buttons {
+  @apply flex flex-wrap gap-4;
+}

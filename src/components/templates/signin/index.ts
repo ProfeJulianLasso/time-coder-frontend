@@ -1,1 +1,1 @@
-export { SignInTemplate } from './signin.template';
+export { default as SignInTemplate } from "./signin.template";

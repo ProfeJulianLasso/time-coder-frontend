@@ -1,7 +1,7 @@
 import { SignInFormOrganism } from "../../organisms/signin-form";
 import "./signin.style.css";
 
-export const SignInTemplate = () => {
+const SignInTemplate = () => {
   return (
     <div className="signin-layout">
       <div className="signin-logo-container">
@@ -25,3 +25,5 @@ export const SignInTemplate = () => {
     </div>
   );
 };
+
+export default SignInTemplate;

@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.api-key-button {
+  @apply flex items-center gap-2 py-2 px-4 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors duration-200 font-medium;
+}
+
+.api-key-button-icon {
+  @apply w-5 h-5;
+}

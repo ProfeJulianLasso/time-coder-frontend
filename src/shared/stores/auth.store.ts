@@ -25,7 +25,7 @@ interface AuthState {
   checkAuth: () => void;
 }
 
-export const useAuthStore = create<AuthState>((set) => ({
+const useAuthStore = create<AuthState>((set) => ({
   user: null,
   token: null,
   isAuthenticated: false,
@@ -44,7 +44,8 @@ export const useAuthStore = create<AuthState>((set) => ({
       });
     } catch (error: unknown) {
       set({
-        error: "Error al iniciar sesión con Google. " + (error as Error).message,
+        error:
+          "Error al iniciar sesión con Google. " + (error as Error).message,
         isLoading: false,
       });
     }
@@ -72,3 +73,5 @@ export const useAuthStore = create<AuthState>((set) => ({
     }
   },
 }));
+
+export default useAuthStore;

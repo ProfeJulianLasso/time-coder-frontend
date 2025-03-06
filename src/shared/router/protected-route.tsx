@@ -1,7 +1,7 @@
 import { Navigate, Outlet } from "react-router-dom";
-import { useAuthStore } from "../stores/auth.store";
+import { useAuthStore } from "../stores";
 
-export const ProtectedRoute = () => {
+const ProtectedRoute = () => {
   const { isAuthenticated } = useAuthStore();
 
   // Si no está autenticado, redirigir a la página de login
@@ -12,3 +12,5 @@ export const ProtectedRoute = () => {
   // Si está autenticado, renderizar las rutas hijas
   return <Outlet />;
 };
+
+export default ProtectedRoute;
