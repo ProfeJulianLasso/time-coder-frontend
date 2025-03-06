@@ -25,7 +25,7 @@
 - Template files must follow the naming convention `[name].template.tsx` and be encapsulated in a folder with the same name as the component.
 - Each component must have its own independent styles file separate from the main component file.
 - The styles file for each component must follow the naming convention `[name].style.css`.
-- Every css file must include `@import "tailwind";` in its first line.
+- Every css file must include `@import "tailwindcss";` in its first line.
 - Always use Tailwind CSS for styling and avoid writing custom CSS unless necessary.
 - Tailwind utility classes should be applied within the styles file using `@apply`.
 - All frontend file names must be in lowercase.
