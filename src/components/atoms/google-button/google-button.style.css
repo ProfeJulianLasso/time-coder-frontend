@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.google-button {
+  @apply flex items-center justify-center gap-2 rounded-md px-4 py-2 bg-white border border-gray-300 shadow-sm hover:bg-gray-50 transition-colors duration-200 text-gray-700 font-medium;
+}
+
+.google-button-icon {
+  @apply w-5 h-5;
+}
+
+.google-button-container {
+  @apply flex justify-center items-center w-full;
+}

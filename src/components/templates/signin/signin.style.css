@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+.signin-layout {
+  @apply min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4;
+}
+
+.signin-logo-container {
+  @apply mb-8;
+}
+
+.signin-logo {
+  @apply h-16 w-auto;
+}
+
+.signin-footer {
+  @apply mt-8 text-center text-sm text-gray-600;
+}

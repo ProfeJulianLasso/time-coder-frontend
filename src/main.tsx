@@ -1,5 +1,10 @@
 import { createRoot } from "react-dom/client";
-import { HomePage } from "./modules/home";
-import "./styles/globals.style.css";
+import { BrowserRouter } from "react-router-dom";
+import { AppRouter } from "./shared/router";
+import "./shared/styles/globals.style.css";
 
-createRoot(document.getElementById("root")!).render(<HomePage />);
+createRoot(document.getElementById("root")!).render(
+  <BrowserRouter>
+    <AppRouter />
+  </BrowserRouter>
+);

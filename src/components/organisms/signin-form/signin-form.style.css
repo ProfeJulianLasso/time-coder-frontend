@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+.signin-container {
+  @apply flex flex-col items-center justify-center w-full max-w-md mx-auto space-y-6 p-8 bg-white rounded-lg shadow-md;
+}
+
+.signin-header {
+  @apply flex flex-col items-center space-y-2;
+}
+
+.signin-title {
+  @apply text-2xl font-bold text-gray-800;
+}
+
+.signin-description {
+  @apply text-sm text-gray-600 text-center;
+}
+
+.signin-divider {
+  @apply w-full flex items-center my-4;
+}
+
+.signin-divider-line {
+  @apply flex-grow border-t border-gray-300;
+}
+
+.signin-divider-text {
+  @apply mx-4 text-sm text-gray-500;
+}

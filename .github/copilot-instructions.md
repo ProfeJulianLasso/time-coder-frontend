@@ -18,7 +18,7 @@
 - Use Socket.IO for real-time communication via WebSockets.
 - Manage global state using Zustand.
 - Follow the Atomic Design methodology, organizing components into atoms, molecules, organisms, and templates.
-- All Atomic Design components must be placed inside the `components` folder.
+- All Atomic Design components must be placed inside the `components` folder in the `src` folder.
 - Atom files must follow the naming convention `[name].atom.tsx` and be encapsulated in a folder with the same name as the component.
 - Molecule files must follow the naming convention `[name].molecule.tsx` and be encapsulated in a folder with the same name as the component.
 - Organism files must follow the naming convention `[name].organism.tsx` and be encapsulated in a folder with the same name as the component.

@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+/* Estilos adicionales específicos para la página de signin */
+.signin-page {
+  @apply w-full h-full;
+}
