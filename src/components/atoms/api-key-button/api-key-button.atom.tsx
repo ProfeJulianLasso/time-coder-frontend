@@ -9,7 +9,7 @@ const ApiKeyButtonAtom = ({ apiKey }: ApiKeyButtonAtomProps) => {
   // La URL de VSCode que incluye el apiKey como parámetro
   const handleOpenVSCode = () => {
     // URL para abrir VSCode con el apiKey como parámetro
-    const vscodeUrl = `vscode://extension/ms-vscode-remote.remote-containers?apiKey=${apiKey}`;
+    const vscodeUrl = `vscode://sofka.devtimer?apiKey=${apiKey}`;
     window.open(vscodeUrl, "_self");
   };
 

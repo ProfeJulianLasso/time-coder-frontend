@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 .dashboard-layout {
-  @apply min-h-screen flex flex-col bg-gray-100;
+  @apply min-h-screen flex flex-col bg-gray-300;
 }
 
 .dashboard-main-content {
