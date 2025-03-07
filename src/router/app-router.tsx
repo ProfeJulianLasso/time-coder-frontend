@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
-import { DashboardPage } from "../../pages/dashboard";
-import { SignInPage } from "../../pages/security/signin";
+import { DashboardPage } from "../pages/dashboard";
+import { SignInPage } from "../pages/security/signin";
 import { useAuthStore } from "../stores";
 import ProtectedRoute from "./protected-route";
 
