@@ -1,5 +1,5 @@
 import { GoogleLogin } from "@react-oauth/google";
-import { useAuthStore } from "../../../shared/stores";
+import { useAuthStore } from "../../../stores";
 import "./google-button.style.css";
 
 const GoogleButtonAtom = () => {

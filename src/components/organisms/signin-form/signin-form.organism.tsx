@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { useAuthStore } from "../../../shared/stores";
+import { useAuthStore } from "../../../stores";
 import GoogleButtonAtom from "../../atoms/google-button/google-button.atom";
 import "./signin-form.style.css";
 

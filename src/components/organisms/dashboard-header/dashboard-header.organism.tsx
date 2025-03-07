@@ -1,4 +1,4 @@
-import { useAuthStore } from "../../../shared/stores";
+import { useAuthStore } from "../../../stores";
 import { LogoutButtonAtom } from "../../atoms/logout-button";
 import "./dashboard-header.style.css";
 

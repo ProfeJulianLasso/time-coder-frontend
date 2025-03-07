@@ -1,6 +1,6 @@
 import { LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { useAuthStore } from "../../../shared/stores";
+import { useAuthStore } from "../../../stores";
 import "./logout-button.style.css";
 
 const LogoutButtonAtom = () => {
