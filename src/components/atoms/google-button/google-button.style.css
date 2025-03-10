@@ -11,3 +11,7 @@
 .google-button-container {
   @apply flex justify-center items-center w-full;
 }
+
+.google-button-loading {
+  @apply flex items-center justify-center px-4 py-3 border border-gray-300 rounded-md bg-white text-gray-600 font-medium;
+}

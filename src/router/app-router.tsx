@@ -10,7 +10,11 @@ const AppRouter = () => {
 
   // Verificar si hay un usuario autenticado al cargar
   useEffect(() => {
-    checkAuth();
+    const verifyAuth = async () => {
+      await checkAuth();
+    };
+
+    verifyAuth();
   }, [checkAuth]);
 
   return (

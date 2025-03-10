@@ -1,11 +1,11 @@
 import { ExternalLink } from "lucide-react";
+import { useAuthStore } from "../../../stores";
 import "./api-key-button.style.css";
 
-interface ApiKeyButtonAtomProps {
-  apiKey: string;
-}
+const ApiKeyButtonAtom = () => {
+  const { user } = useAuthStore();
+  const apiKey = user?.apiKey ?? "";
 
-const ApiKeyButtonAtom = ({ apiKey }: ApiKeyButtonAtomProps) => {
   // La URL de VSCode que incluye el apiKey como parámetro
   const handleOpenVSCode = () => {
     // URL para abrir VSCode con el apiKey como parámetro
@@ -18,6 +18,7 @@ const ApiKeyButtonAtom = ({ apiKey }: ApiKeyButtonAtomProps) => {
       className="api-key-button"
       onClick={handleOpenVSCode}
       title="Abrir en VSCode"
+      disabled={!apiKey}
     >
       <ExternalLink className="api-key-button-icon" />
       <span>Abrir en VSCode</span>
