@@ -23,7 +23,7 @@ const SignInFormOrganism = () => {
   return (
     <div className="signin-container">
       <div className="signin-header">
-        <h1 className="signin-title">Bienvenido a TimeCoder</h1>
+        <h1 className="signin-title">Bienvenido a TimeCoder!</h1>
         <p className="signin-description">
           Inicia sesión con tu cuenta corporativa para continuar
         </p>

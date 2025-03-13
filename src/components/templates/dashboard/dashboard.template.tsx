@@ -15,7 +15,7 @@ const DashboardTemplate = () => {
 
       <footer className="dashboard-footer">
         <p>
-          © {new Date().getFullYear()} TimeCoder. Todos los derechos reservados.
+          © {new Date().getFullYear()} TimeCoder!. Todos los derechos reservados.
         </p>
       </footer>
     </div>

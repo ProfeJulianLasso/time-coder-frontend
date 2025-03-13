@@ -9,7 +9,7 @@ const ApiKeyButtonAtom = () => {
   // La URL de VSCode que incluye el apiKey como parámetro
   const handleOpenVSCode = () => {
     // URL para abrir VSCode con el apiKey como parámetro
-    const vscodeUrl = `vscode://Sofka.timecoder?apiKey=${apiKey}`;
+    const vscodeUrl = `vscode://Sofka.time-coder?apiKey=${apiKey}`;
     window.open(vscodeUrl, "_self");
   };
 

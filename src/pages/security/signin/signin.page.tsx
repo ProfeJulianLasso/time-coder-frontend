@@ -8,7 +8,7 @@ const GOOGLE_CLIENT_ID = import.meta.env.VITE_GOOGLE_CLIENT_ID || "";
 
 const SignInPage = () => {
   useEffect(() => {
-    document.title = "Iniciar Sesión | TimeCoder";
+    document.title = "Iniciar Sesión | TimeCoder!";
   }, []);
 
   return (

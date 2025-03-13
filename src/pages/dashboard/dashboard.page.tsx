@@ -4,7 +4,7 @@ import "./dashboard.style.css";
 
 const DashboardPage = () => {
   useEffect(() => {
-    document.title = "Dashboard | TimeCoder";
+    document.title = "Dashboard | TimeCoder!";
   }, []);
 
   return <DashboardTemplate />;

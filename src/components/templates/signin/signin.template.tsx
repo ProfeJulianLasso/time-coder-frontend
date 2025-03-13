@@ -7,10 +7,10 @@ const SignInTemplate = () => {
       <div className="signin-logo-container">
         <img
           src="/logo.svg"
-          alt="TimeCoder Logo"
+          alt="TimeCoder! Logo"
           className="signin-logo"
           onError={(e) => {
-            e.currentTarget.src = "https://placehold.co/150?text=TimeCoder";
+            e.currentTarget.src = "https://placehold.co/150?text=TimeCoder!";
           }}
         />
       </div>
@@ -19,7 +19,7 @@ const SignInTemplate = () => {
 
       <div className="signin-footer">
         <p>
-          © {new Date().getFullYear()} TimeCoder. Todos los derechos reservados.
+          © {new Date().getFullYear()} TimeCoder!. Todos los derechos reservados.
         </p>
       </div>
     </div>
