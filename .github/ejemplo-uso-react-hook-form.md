@@ -123,7 +123,7 @@ export default LoginFormOrganism;
 
 ```css
 // login-form.style.css
-@import "tailwind";
+@import "tailwindcss";
 
 .login-form {
   @apply flex flex-col gap-4 w-full max-w-md mx-auto p-6 rounded-lg shadow-md bg-white;

@@ -79,7 +79,7 @@
 
 ### Estilos CSS y Tailwind
 
-1. **Importación obligatoria**: Todo archivo CSS debe comenzar con `@import "tailwind";`
+1. **Importación obligatoria**: Todo archivo CSS debe comenzar con `@import "tailwindcss";`
 2. **Separación de responsabilidades**:
    - En archivos TSX: Solo usar nombres de clases CSS
    - En archivos CSS: Contener todas las definiciones de estilos basadas en Tailwind
@@ -184,7 +184,7 @@ components/
 
 ```css
 /* components/atoms/button/button.style.css */
-@import "tailwind";
+@import "tailwindcss";
 
 .button {
   @apply rounded px-4 py-2 text-sm font-medium cursor-pointer border-none;
